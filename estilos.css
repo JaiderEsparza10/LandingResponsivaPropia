@@ -1,510 +1,517 @@
 /* Esto es como una regla universal para todo en tu página. */
 /* Le dice a cada cosa que no tenga espacios extra a su alrededor y que, */
 /* cuando le des un tamaño, ya incluya cualquier borde o relleno. */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Estilos para el Fondo General de tu Página */
-body{
-    /* Aquí definimos el fondo: una imagen con un degradado oscuro encima. */
-    background-image: linear-gradient(to top, #091111c5 0%, #00000057 99%, #000000b8 100%), url(Imagenes/konniseg.jpg);
-    background-size: cover; /* La imagen cubre todo el espacio. */
-    background-position:center; /* La imagen se centra. */
-    background-repeat: no-repeat; /* La imagen no se repite. */
-    min-height: 100vh; /* Asegura que el fondo sea al menos tan alto como la pantalla. */
-    margin: 0;
+body {
+  /* Aquí definimos el fondo: una imagen con un degradado oscuro encima. */
+  background-image: linear-gradient(
+      to top,
+      #be3de1c5 0%,
+      #be3de1c5 99%,
+      #be3de1c5 100%
+    ),
+    url(Imagenes/konniseg.jpg);
+  background-size: cover; /* La imagen cubre todo el espacio. */
+  background-position: center; /* La imagen se centra. */
+  background-repeat: no-repeat; /* La imagen no se repite. */
+  min-height: 100vh; /* Asegura que el fondo sea al menos tan alto como la pantalla. */
+  margin: 0;
 }
 
 /* Estilos para la Parte de Arriba de tu Página (el Encabezado) */
-header{
-    /* Esto permite que los elementos dentro del encabezado se alineen como si fueran texto. */
-    display: inline-block;
-    height: 70%;
-    align-items: center;
-    width: 100%;
+header {
+  /* Esto permite que los elementos dentro del encabezado se alineen como si fueran texto. */
+  display: inline-block;
+  height: 70%;
+  align-items: center;
+  width: 100%;
 }
 
 /* Estilos para el Contenedor del Logo de la Izquierda */
-.Logo-izquierda{
-    /* Hace que este contenedor se comporte como un elemento de texto para que el logo y el nombre se pongan lado a lado. */
-    display: inline-block;
+.Logo-izquierda {
+  /* Hace que este contenedor se comporte como un elemento de texto para que el logo y el nombre se pongan lado a lado. */
+  display: inline-block;
 }
 
 /* Estilos para la Imagen del Logo */
-.Logo-izquierda img{
-    height: 70px; /* Tamaño del logo. */
-    display: inline-block;
-    vertical-align: middle; /* Alinea el logo al centro verticalmente con el texto. */
-    margin-top: 30px; /* Espacio desde arriba. */
-    margin-left: 60px; /* Espacio desde la izquierda. */
+.Logo-izquierda img {
+  height: 70px; /* Tamaño del logo. */
+  display: inline-block;
+  vertical-align: middle; /* Alinea el logo al centro verticalmente con el texto. */
+  margin-top: 30px; /* Espacio desde arriba. */
+  margin-left: 60px; /* Espacio desde la izquierda. */
 }
 
 /* Estilos para el Nombre de la Empresa */
-.Nombre-Empresa{
-    color: white; /* Color blanco para el texto. */
-    display: inline-block;
-    margin-top: 30px;
-    margin-left: 20px;
-    vertical-align: middle;
-    font-family: Bookman Old Style; /* Tipo de letra. */
-    font-style: italic; /* Estilo cursiva. */
+.Nombre-Empresa {
+  color: white; /* Color blanco para el texto. */
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 20px;
+  vertical-align: middle;
+  font-family: Bookman Old Style; /* Tipo de letra. */
+  font-style: italic; /* Estilo cursiva. */
 }
 
 /* Estilos para la Sección Derecha (donde va el menú de navegación) */
-.Seccion-Derecha{
-    /* Envía esta sección a la derecha de la página. */
-    float: right;
-    line-height: 80px; /* Ayuda a centrar verticalmente los enlaces del menú. */
-    margin-top: 25px;
-    margin-right: 80px;
+.Seccion-Derecha {
+  /* Envía esta sección a la derecha de la página. */
+  float: right;
+  line-height: 80px; /* Ayuda a centrar verticalmente los enlaces del menú. */
+  margin-top: 25px;
+  margin-right: 80px;
 }
 
 /* Estilos para los Enlaces del Menú de Navegación */
-.Seccion-Derecha a{
-    /* Hace que cada enlace flote a la izquierda, poniéndolos uno al lado del otro. */
-    float: left;
-    text-decoration: none; /* Quita el subrayado de los enlaces. */
-    color: white; /* Color blanco para el texto. */
-    padding-right: 50px; /* Espacio entre cada enlace del menú. */
-    font-size: 20px; /* Tamaño de la letra. */
-    font-family: Bookman Old Style;
-    font-weight: 200px;
+.Seccion-Derecha a {
+  /* Hace que cada enlace flote a la izquierda, poniéndolos uno al lado del otro. */
+  float: left;
+  text-decoration: none; /* Quita el subrayado de los enlaces. */
+  color: white; /* Color blanco para el texto. */
+  padding-right: 50px; /* Espacio entre cada enlace del menú. */
+  font-size: 20px; /* Tamaño de la letra. */
+  font-family: Bookman Old Style;
+  font-weight: 200px;
 }
 
 /* Lo que sucede cuando pones el ratón sobre un enlace del menú */
-.Seccion-Derecha a:hover{
-    color: rgb(0, 174, 255); /* El color del texto cambia a azul. */
-    cursor: pointer; /* El puntero del ratón se convierte en una manita. */
+.Seccion-Derecha a:hover {
+  color: rgb(0, 174, 255); /* El color del texto cambia a azul. */
+  cursor: pointer; /* El puntero del ratón se convierte en una manita. */
 }
 
 /* Estilos para el Contenedor que Sostiene las Dos Cajas de Contenido */
 .contenedor-padre {
-    margin-top: 8%; /* Espacio desde arriba. */
-    text-align: center; /* Centra el texto y los elementos dentro de este contenedor. */
-    max-width: 1000px; /* Ancho máximo para que no se vea demasiado estirado en pantallas grandes. */
-    margin-left: auto; /* Ayuda a centrar el contenedor en la página. */
-    margin-right: auto; /* Ayuda a centrar el contenedor en la página. */
+  margin-top: 8%; /* Espacio desde arriba. */
+  text-align: center; /* Centra el texto y los elementos dentro de este contenedor. */
+  max-width: 1000px; /* Ancho máximo para que no se vea demasiado estirado en pantallas grandes. */
+  margin-left: auto; /* Ayuda a centrar el contenedor en la página. */
+  margin-right: auto; /* Ayuda a centrar el contenedor en la página. */
 }
 
 /* Estilos para la Caja de Contenido de la Izquierda */
 .contenido-izquierda {
-    background-color: transparent; /* Fondo transparente. */
-    width: 30%; /* Ocupa el 30% del ancho del contenedor principal. */
-    height: 500px; /* Altura fija. */
-    /* Clave: esto permite que la caja se ponga al lado de otra caja. */
-    display: inline-block;
-    vertical-align: top; /* Alinea la parte de arriba de la caja. */
-    margin-right: 1%; /* Pequeño espacio a la derecha. */
-    /* Este es un margen fijo a la izquierda que se ajustará en pantallas más pequeñas. */
-    margin-left: 400px;
-    margin-top: 150px; /* Espacio desde arriba. */
-    border-radius: 50px; /* Esquinas redondeadas. */
-    /* Hace que cualquier cambio en las propiedades de esta caja sea suave y dure medio segundo. */
-    transition: all 0.5s ease-in-out;
-    box-shadow: 0 8px 10px rgba(255, 255, 255, 10); /* Añade una sombra ligera a la caja. */
+  background-color: transparent; /* Fondo transparente. */
+  width: 30%; /* Ocupa el 30% del ancho del contenedor principal. */
+  height: 500px; /* Altura fija. */
+  /* Clave: esto permite que la caja se ponga al lado de otra caja. */
+  display: inline-block;
+  vertical-align: top; /* Alinea la parte de arriba de la caja. */
+  margin-right: 1%; /* Pequeño espacio a la derecha. */
+  /* Este es un margen fijo a la izquierda que se ajustará en pantallas más pequeñas. */
+  margin-left: 400px;
+  margin-top: 150px; /* Espacio desde arriba. */
+  border-radius: 50px; /* Esquinas redondeadas. */
+  /* Hace que cualquier cambio en las propiedades de esta caja sea suave y dure medio segundo. */
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 8px 10px rgba(255, 255, 255, 10); /* Añade una sombra ligera a la caja. */
 }
 
 /* Lo que sucede cuando pones el ratón sobre la Caja Izquierda */
 .contenido-izquierda:hover {
-    transform: scale(1.03); /* La caja se agranda un poquito. */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* La sombra se hace más notoria. */
-    background-image: radial-gradient(gray, black); /* El fondo cambia a un degradado. */
+  transform: scale(1.03); /* La caja se agranda un poquito. */
+  box-shadow: 0 8px 16px rgba(136, 13, 136, 0.4); /* La sombra se hace más notoria. */
+  background-image: radial-gradient(
+    gray,
+    #be3de1c5
+  ); /* El fondo cambia a un degradado. */
 }
 
 /* Estilos para la Caja de Contenido de la Derecha */
 .contenido-derecha {
-    background-color: rgb(0, 0, 0); /* Fondo negro. */
-    width: 30%; /* Ocupa el 30% del ancho. */
-    height: 500px; /* Altura fija. */
-    /* Hace que esta caja también se ponga al lado de la otra. */
-    display: inline-block;
-    vertical-align: top; /* Alinea la parte de arriba de la caja. */
-    margin-left: 1%; /* Pequeño espacio a la izquierda. */
-    margin-top: 150px; /* Espacio desde arriba. */
-    border-radius: 50px; /* Esquinas redondeadas. */
-    /* Suaviza los cambios en las propiedades de esta caja. */
-    transition: all 0.5s ease-in-out;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade una sombra. */
+  background-color: rgb(180, 44, 171); /* Fondo negro. */
+  width: 30%; /* Ocupa el 30% del ancho. */
+  height: 500px; /* Altura fija. */
+  /* Hace que esta caja también se ponga al lado de la otra. */
+  display: inline-block;
+  vertical-align: top; /* Alinea la parte de arriba de la caja. */
+  margin-left: 1%; /* Pequeño espacio a la izquierda. */
+  margin-top: 150px; /* Espacio desde arriba. */
+  border-radius: 50px; /* Esquinas redondeadas. */
+  /* Suaviza los cambios en las propiedades de esta caja. */
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade una sombra. */
 }
 
 /* Lo que sucede cuando pones el ratón sobre la Caja Derecha */
 .contenido-derecha:hover {
-    transform: scale(1.03); /* La caja se agranda un poquito. */
-    box-shadow: 0 8px 20px rgba(255, 255, 255, 10); /* La sombra se hace más notoria y blanca. */
-    background-color: transparent; /* El fondo se vuelve transparente. */
+  transform: scale(1.03); /* La caja se agranda un poquito. */
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 10); /* La sombra se hace más notoria y blanca. */
+  background-color: transparent; /* El fondo se vuelve transparente. */
 }
 
 /* Estilos para el Título Grande (H1) dentro de la Caja Izquierda */
-.contenido-izquierda h1{
-    font-size: 30px; /* Tamaño del título. */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center; /* Centra el texto. */
-    margin-top: 10px;
-    color: white; /* Color blanco. */
+.contenido-izquierda h1 {
+  font-size: 30px; /* Tamaño del título. */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center; /* Centra el texto. */
+  margin-top: 10px;
+  color: white; /* Color blanco. */
 }
 
 /* Estilos para el Párrafo (P) dentro de la Caja Izquierda */
-.contenido-izquierda p{
-    font-size: 18px; /* Tamaño del texto del párrafo. */
-    margin-top: 15px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    justify-content: center;
-    text-align: center; /* Centra el texto. */
-    color: white;
-    padding: 10px; /* Relleno alrededor del texto. */
+.contenido-izquierda p {
+  font-size: 18px; /* Tamaño del texto del párrafo. */
+  margin-top: 15px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  justify-content: center;
+  text-align: center; /* Centra el texto. */
+  color: white;
+  padding: 10px; /* Relleno alrededor del texto. */
 }
 
 /* Estilos para la Imagen dentro de la Caja Izquierda */
-.contenido-izquierda img{
-    width: 60%; /* La imagen ocupa el 60% del ancho de su caja. */
-    margin-left: 85px;
-    margin-top: -30px; /* La sube un poco. */
+.contenido-izquierda img {
+  width: 60%; /* La imagen ocupa el 60% del ancho de su caja. */
+  margin-left: 85px;
+  margin-top: -30px; /* La sube un poco. */
 }
 
 /* Estilos para el Botón de Comprar de la Caja Izquierda */
-.boton-comprar-izquierda{
-    background-color: #000508; /* Color de fondo oscuro. */
-    color: white; /* Color del texto blanco. */
-    vertical-align: middle;
-    border: 2px #1ba974; /* Borde del botón. */
-    margin-top: 25px;
-    margin: 0 auto; /* Centra el botón horizontalmente. */
-
+.boton-comprar-izquierda {
+  background-color: #be3de1c5; /* Color de fondo oscuro. */
+  color: white; /* Color del texto blanco. */
+  vertical-align: middle;
+  border: 2px #1ba974; /* Borde del botón. */
+  margin-top: 25px;
+  margin: 0 auto; /* Centra el botón horizontalmente. */
 }
 
 /* Estilos Adicionales para el Botón de Comprar de la Caja Izquierda */
-.boton-comprar-izquierda{
-    padding: 8px; /* Relleno interno del botón. */
-    border-radius: 20px; /* Esquinas redondeadas. */
-    font-size: 1.5rem; /* Tamaño de la letra. */
-    width: 180px; /* Ancho fijo. */
-    margin-left: 200px;
-    font-weight: bold; /* Texto en negrita. */
+.boton-comprar-izquierda {
+  padding: 8px; /* Relleno interno del botón. */
+  border-radius: 20px; /* Esquinas redondeadas. */
+  font-size: 1.5rem; /* Tamaño de la letra. */
+  width: 180px; /* Ancho fijo. */
+  margin-left: 200px;
+  font-weight: bold; /* Texto en negrita. */
 }
 
 /* Estilos para el Título Grande (H1) dentro de la Caja Derecha */
-.contenido-derecha h1{
-    font-size: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    margin-top: 10px;
-    color: rgb(141, 141, 141); /* Color gris. */
-    font-style: italic;
+.contenido-derecha h1 {
+  font-size: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin-top: 10px;
+  color: rgb(141, 141, 141); /* Color gris. */
+  font-style: italic;
 }
 
 /* Estilos para el Párrafo (P) dentro de la Caja Derecha */
-.contenido-derecha p{
-    font-size: 16px;
-    margin-top: 15px;
-    font-family:'Courier New', Courier, monospace;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    padding: 19px;
+.contenido-derecha p {
+  font-size: 16px;
+  margin-top: 15px;
+  font-family: "Courier New", Courier, monospace;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 19px;
 }
 
 /* Estilos para la Imagen dentro de la Caja Derecha */
-.contenido-derecha img{
-    width: 70%; /* La imagen ocupa el 70% del ancho de su caja. */
-    margin-left: 95px;
-    margin-top: -15px;
+.contenido-derecha img {
+  width: 70%; /* La imagen ocupa el 70% del ancho de su caja. */
+  margin-left: 95px;
+  margin-top: -15px;
 }
 
 /* Estilos para el Botón de Comprar de la Caja Derecha */
-.boton-comprar-Derecha{
-    background-color: #ffffff; /* Color de fondo blanco. */
-    color: rgb(0, 0, 0); /* Color del texto negro. */
-    vertical-align: middle;
-    border: 2px #1ba974; /* Borde del botón. */
-    margin-top: 10px;
-    margin: 0 auto; /* Centra el botón horizontalmente. */
-
+.boton-comprar-Derecha {
+  background-color: #ffffff; /* Color de fondo blanco. */
+  color: rgb(0, 0, 0); /* Color del texto negro. */
+  vertical-align: middle;
+  border: 2px #1ba974; /* Borde del botón. */
+  margin-top: 10px;
+  margin: 0 auto; /* Centra el botón horizontalmente. */
 }
 
 /* Estilos Adicionales para el Botón de Comprar de la Caja Derecha */
-.boton-comprar-Derecha{
-    padding: 8px; /* Relleno interno del botón. */
-    border-radius: 20px; /* Esquinas redondeadas. */
-    font-size: 1.5rem; /* Tamaño de la letra. */
-    width: 180px; /* Ancho fijo. */
-    margin-left: 200px;
-    font-weight: bold; /* Texto en negrita. */
+.boton-comprar-Derecha {
+  padding: 8px; /* Relleno interno del botón. */
+  border-radius: 20px; /* Esquinas redondeadas. */
+  font-size: 1.5rem; /* Tamaño de la letra. */
+  width: 180px; /* Ancho fijo. */
+  margin-left: 200px;
+  font-weight: bold; /* Texto en negrita. */
 }
 
 /* --- Ajustes para Diferentes Tamaños de Pantalla (Responsividad) --- */
 
 /* Cuando la pantalla es de hasta 1024px de ancho (para tabletas o computadoras pequeñas) */
 @media (max-width: 1024px) {
-    /* El contenedor principal se hace un poco más estrecho. */
-    .contenedor-padre {
-        max-width: 760px;
-        margin-top: 5%;
-    }
+  /* El contenedor principal se hace un poco más estrecho. */
+  .contenedor-padre {
+    max-width: 760px;
+    margin-top: 5%;
+  }
 
-    /* Las dos cajas de contenido se ajustan: */
-    .contenido-izquierda,
-    .contenido-derecha {
-        width: 45%; /* Se hacen un poco más anchas. */
-        margin-left: 3%; /* Espacio a la izquierda. */
-        margin-right: 1%; /* Espacio a la derecha. */
-        margin-top: 100px;
-        height: auto; /* La altura se ajusta al contenido. */
-    }
+  /* Las dos cajas de contenido se ajustan: */
+  .contenido-izquierda,
+  .contenido-derecha {
+    width: 45%; /* Se hacen un poco más anchas. */
+    margin-left: 3%; /* Espacio a la izquierda. */
+    margin-right: 1%; /* Espacio a la derecha. */
+    margin-top: 100px;
+    height: auto; /* La altura se ajusta al contenido. */
+  }
 
-    /* La imagen del logo se hace más pequeña. */
-    .Logo-izquierda img {
-        height: 60px;
-        margin-left: 30px;
-    }
+  /* La imagen del logo se hace más pequeña. */
+  .Logo-izquierda img {
+    height: 60px;
+    margin-left: 30px;
+  }
 
-    /* El nombre de la empresa se hace más pequeño. */
-    .Nombre-Empresa {
-        font-size: 1.5em;
-        margin-left: 10px;
-    }
+  /* El nombre de la empresa se hace más pequeño. */
+  .Nombre-Empresa {
+    font-size: 1.5em;
+    margin-left: 10px;
+  }
 
-    /* La sección del menú se ajusta. */
-    .Seccion-Derecha {
-        margin-right: 50px;
-        line-height: 70px;
-    }
+  /* La sección del menú se ajusta. */
+  .Seccion-Derecha {
+    margin-right: 50px;
+    line-height: 70px;
+  }
 
-    /* Los enlaces del menú se ajustan. */
-    .Seccion-Derecha a {
-        padding-right: 20px;
-        font-size: 18px;
-    }
+  /* Los enlaces del menú se ajustan. */
+  .Seccion-Derecha a {
+    padding-right: 20px;
+    font-size: 18px;
+  }
 
-    /* Los títulos dentro de las cajas se hacen más pequeños. */
-    .contenido-izquierda h1,
-    .contenido-derecha h1 {
-        font-size: 24px;
-    }
+  /* Los títulos dentro de las cajas se hacen más pequeños. */
+  .contenido-izquierda h1,
+  .contenido-derecha h1 {
+    font-size: 24px;
+  }
 
-    /* Los párrafos dentro de las cajas se hacen más pequeños. */
-    .contenido-izquierda p,
-    .contenido-derecha p {
-        font-size: 16px;
-    }
+  /* Los párrafos dentro de las cajas se hacen más pequeños. */
+  .contenido-izquierda p,
+  .contenido-derecha p {
+    font-size: 16px;
+  }
 
-    /* La imagen de la caja izquierda se ajusta. */
-    .contenido-izquierda img {
-        width: 80%;
-        margin-left: 45px;
-        margin-right: auto;
-    }
+  /* La imagen de la caja izquierda se ajusta. */
+  .contenido-izquierda img {
+    width: 80%;
+    margin-left: 45px;
+    margin-right: auto;
+  }
 
-    /* La imagen de la caja derecha se ajusta. */
-    .contenido-derecha img{
-        width: 70%;
-        margin-top: -30px;
-        margin-bottom: 40px;
-        margin-left: 60px;
-    }
+  /* La imagen de la caja derecha se ajusta. */
+  .contenido-derecha img {
+    width: 70%;
+    margin-top: -30px;
+    margin-bottom: 40px;
+    margin-left: 60px;
+  }
 
-    /* Los botones de comprar se ajustan. */
-    .boton-comprar-izquierda,
-    .boton-comprar-Derecha {
-        width: 150px;
-        font-size: 1.2rem;
-        margin-left: 150px;
-        margin-top: -30px;
-    }
+  /* Los botones de comprar se ajustan. */
+  .boton-comprar-izquierda,
+  .boton-comprar-Derecha {
+    width: 150px;
+    font-size: 1.2rem;
+    margin-left: 150px;
+    margin-top: -30px;
+  }
 }
 
 /* Cuando la pantalla es de hasta 768px de ancho (para móviles o tabletas en vertical) */
 @media (max-width: 768px) {
-    /* El encabezado se ajusta para que todo se apile y se centre. */
-    header {
-        height: auto;
-        padding: 10px 0;
-        text-align: center;
-    }
+  /* El encabezado se ajusta para que todo se apile y se centre. */
+  header {
+    height: auto;
+    padding: 10px 0;
+    text-align: center;
+  }
 
-    /* El logo de la izquierda se ajusta para móviles. */
-    .Logo-izquierda {
-        display: block; /* Se convierte en un bloque para ocupar su propia línea. */
-        width: 100%;
-        text-align: center;
-    }
+  /* El logo de la izquierda se ajusta para móviles. */
+  .Logo-izquierda {
+    display: block; /* Se convierte en un bloque para ocupar su propia línea. */
+    width: 100%;
+    text-align: center;
+  }
 
-    /* La imagen del logo se centra y se hace más pequeña. */
-    .Logo-izquierda img{
-        margin: 10px auto;
-        height: 50px;
-        display: block;
-    }
+  /* La imagen del logo se centra y se hace más pequeña. */
+  .Logo-izquierda img {
+    margin: 10px auto;
+    height: 50px;
+    display: block;
+  }
 
-    /* El nombre de la empresa se apila y se centra. */
-    .Nombre-Empresa {
-        display: block;
-        margin: 5px 0 15px 0;
-        text-align: center;
-    }
+  /* El nombre de la empresa se apila y se centra. */
+  .Nombre-Empresa {
+    display: block;
+    margin: 5px 0 15px 0;
+    text-align: center;
+  }
 
-    /* La sección del menú se apila y se centra. */
-    .Seccion-Derecha {
-        float: none;
-        display: block;
-        width: 100%;
-        margin: 0;
-        text-align: center;
-        line-height: normal;
-        padding-bottom: 10px;
-    }
+  /* La sección del menú se apila y se centra. */
+  .Seccion-Derecha {
+    float: none;
+    display: block;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    line-height: normal;
+    padding-bottom: 10px;
+  }
 
-    /* Los enlaces del menú se ajustan para móviles. */
-    .Seccion-Derecha a {
-        float: none;
-        display: inline-block;
-        padding: 5px 10px;
-        font-size: 16px;
-        margin: 0 5px;
-    }
+  /* Los enlaces del menú se ajustan para móviles. */
+  .Seccion-Derecha a {
+    float: none;
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 16px;
+    margin: 0 5px;
+  }
 
-    /* El contenedor principal se hace casi del ancho de la pantalla. */
-    .contenedor-padre {
-        max-width: 95%;
-        margin-top: 3%;
-        padding: 0 10px;
-    }
+  /* El contenedor principal se hace casi del ancho de la pantalla. */
+  .contenedor-padre {
+    max-width: 95%;
+    margin-top: 3%;
+    padding: 0 10px;
+  }
 
-    /* Las dos cajas de contenido ahora se apilan una encima de la otra. */
-    .contenido-izquierda,
-    .contenido-derecha {
-        width: 90%; /* Ocupan casi todo el ancho de la pantalla. */
-        display: block; /* Clave: hace que se apilen verticalmente. */
-        margin: 50px auto 20px auto; /* Se centran y tienen espacio vertical entre ellas. */
-        height: auto; /* La altura se ajusta al contenido. */
-        margin-left: auto; /* Ayuda a centrar. */
-        margin-right: auto; /* Ayuda a centrar. */
-    }
+  /* Las dos cajas de contenido ahora se apilan una encima de la otra. */
+  .contenido-izquierda,
+  .contenido-derecha {
+    width: 90%; /* Ocupan casi todo el ancho de la pantalla. */
+    display: block; /* Clave: hace que se apilen verticalmente. */
+    margin: 50px auto 20px auto; /* Se centran y tienen espacio vertical entre ellas. */
+    height: auto; /* La altura se ajusta al contenido. */
+    margin-left: auto; /* Ayuda a centrar. */
+    margin-right: auto; /* Ayuda a centrar. */
+  }
 
-    /* Títulos y párrafos dentro de las cajas se hacen más pequeños. */
-    .contenido-izquierda h1,
-    .contenido-derecha h1 {
-        font-size: 22px;
-    }
+  /* Títulos y párrafos dentro de las cajas se hacen más pequeños. */
+  .contenido-izquierda h1,
+  .contenido-derecha h1 {
+    font-size: 22px;
+  }
 
-    .contenido-izquierda p,
-    .contenido-derecha p {
-        font-size: 15px;
-        padding: 8px;
-    }
+  .contenido-izquierda p,
+  .contenido-derecha p {
+    font-size: 15px;
+    padding: 8px;
+  }
 
-    /* Las imágenes dentro de las cajas se ajustan. */
-    .contenido-izquierda img,
-    .contenido-derecha img {
-        width: 70%;
-        margin-left: 80px;
-        margin-right: auto;
-        margin-top: -30px;
-    }
+  /* Las imágenes dentro de las cajas se ajustan. */
+  .contenido-izquierda img,
+  .contenido-derecha img {
+    width: 70%;
+    margin-left: 80px;
+    margin-right: auto;
+    margin-top: -30px;
+  }
 
-    /* Los botones de comprar se ajustan. */
-    .boton-comprar-izquierda,
-    .boton-comprar-Derecha {
-        width: 140px;
-        font-size: 1.1rem;
-        margin: 15px auto 15px auto;
-        margin-left: 250px;
-        margin-top: -40px;
-    }
+  /* Los botones de comprar se ajustan. */
+  .boton-comprar-izquierda,
+  .boton-comprar-Derecha {
+    width: 140px;
+    font-size: 1.1rem;
+    margin: 15px auto 15px auto;
+    margin-left: 250px;
+    margin-top: -40px;
+  }
 }
 
 /* Cuando la pantalla es de hasta 480px de ancho (para móviles muy pequeños) */
-@media (max-width: 480px){
-    /* Se hacen ajustes aún más finos para pantallas muy pequeñas. */
-    header {
-        height: auto;
-        padding: 10px 0;
-        text-align: center;
-    }
-    /*Modificamos el div que contendra la imagen y el titulo de la empresa*/
-    .Logo-izquierda {
-        display: block;
-        width: 100%;
-        text-align: center;
-    }
-    /* Ajustamos la imagen */
-    .Logo-izquierda img{
-        margin: 10px auto;
-        height: 50px;
-        display: block;
-    }
-    /* Ajustamos el nombre de la empresa */
-    .Nombre-Empresa {
-        display: block;
-        margin: 5px 0 15px 0;
-        text-align: center;
-    }
-    /* Ajustamos el contenedor es decir el nav, que contendra los enlaces */
-    .Seccion-Derecha {
-        float: none;
-        display: block;
-        width: 100%;
-        margin: 0;
-        text-align: center;
-        line-height: normal;
-        padding-bottom: 10px;
-    }
+@media (max-width: 480px) {
+  /* Se hacen ajustes aún más finos para pantallas muy pequeñas. */
+  header {
+    height: auto;
+    padding: 10px 0;
+    text-align: center;
+  }
+  /*Modificamos el div que contendra la imagen y el titulo de la empresa*/
+  .Logo-izquierda {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  /* Ajustamos la imagen */
+  .Logo-izquierda img {
+    margin: 10px auto;
+    height: 50px;
+    display: block;
+  }
+  /* Ajustamos el nombre de la empresa */
+  .Nombre-Empresa {
+    display: block;
+    margin: 5px 0 15px 0;
+    text-align: center;
+  }
+  /* Ajustamos el contenedor es decir el nav, que contendra los enlaces */
+  .Seccion-Derecha {
+    float: none;
+    display: block;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    line-height: normal;
+    padding-bottom: 10px;
+  }
 
-    /* El relleno de los enlaces del menú se hace más pequeño. */
-    .Seccion-Derecha a {
-        float: none;
-        display: inline-block;
-        padding: 4px 8px;
-        font-size: 16px;
-        margin: 0 5px;
-    }
-    /* Modificamos el contenedor principal que almacena el section y el aside */
-    .contenedor-padre {
-        max-width: 95%;
-        margin-top: 3%;
-        padding: 0 10px;
-    }
-    /* Aqui estamos modificando los contenedores que estan dentro del contenedor padre, es decir
+  /* El relleno de los enlaces del menú se hace más pequeño. */
+  .Seccion-Derecha a {
+    float: none;
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 16px;
+    margin: 0 5px;
+  }
+  /* Modificamos el contenedor principal que almacena el section y el aside */
+  .contenedor-padre {
+    max-width: 95%;
+    margin-top: 3%;
+    padding: 0 10px;
+  }
+  /* Aqui estamos modificando los contenedores que estan dentro del contenedor padre, es decir
     el section y el aside */
-    .contenido-izquierda,
-    .contenido-derecha {
-        width: 90%;
-        display: block;
-        margin: 50px auto 20px auto;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    /* Modificamos los titulos */
-    .contenido-izquierda h1,
-    .contenido-derecha h1 {
-        font-size: 22px;
-    }
-    /* Modificamos los parrafos */
-    .contenido-izquierda p,
-    .contenido-derecha p {
-        font-size: 15px;
-        padding: 8px;
-    }
+  .contenido-izquierda,
+  .contenido-derecha {
+    width: 90%;
+    display: block;
+    margin: 50px auto 20px auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Modificamos los titulos */
+  .contenido-izquierda h1,
+  .contenido-derecha h1 {
+    font-size: 22px;
+  }
+  /* Modificamos los parrafos */
+  .contenido-izquierda p,
+  .contenido-derecha p {
+    font-size: 15px;
+    padding: 8px;
+  }
 
-    /* Las imágenes se ajustan para pantallas aún más pequeñas. */
-    .contenido-izquierda img,
-    .contenido-derecha img {
-        width: 70%;
-        margin-left: 60px;
-        margin-right: auto;
-        margin-top: -10px;
-    }
+  /* Las imágenes se ajustan para pantallas aún más pequeñas. */
+  .contenido-izquierda img,
+  .contenido-derecha img {
+    width: 70%;
+    margin-left: 60px;
+    margin-right: auto;
+    margin-top: -10px;
+  }
 
-    /* Los botones de comprar se ajustan para pantallas muy pequeñas. */
-    .boton-comprar-izquierda,
-    .boton-comprar-Derecha {
-        width: 140px;
-        font-size: 1.1rem;
-        margin: 15px auto 15px auto;
-        margin-left: 110px;
-        margin-top: -20px;
-    }
+  /* Los botones de comprar se ajustan para pantallas muy pequeñas. */
+  .boton-comprar-izquierda,
+  .boton-comprar-Derecha {
+    width: 140px;
+    font-size: 1.1rem;
+    margin: 15px auto 15px auto;
+    margin-left: 110px;
+    margin-top: -20px;
+  }
 }
